@@ -1,0 +1,481 @@
+AIRPORT:
+
+INSERT INTO AIRPORT (IATASTATIONCODE, "Name", CITY, COUNTRY)
+VALUES 
+  ('AMD', 'Sardar VallaBhai International Airport', 'Ahmedabad', 'India') ,
+  ('LAX', 'Los Angeles International Airport', 'Los Angeles', 'USA'),
+  ('DXB', 'Dubai International Airport', 'Dubai', 'UAE') ,
+  ('SFO', 'San Francisco International Airport', 'San Francisco', 'USA') ,
+  ('LHR', 'Heathrow Airport', 'London', 'UK') ,
+  ('CDG', 'Charles de Gaulle Airport', 'Paris', 'France') ,
+  ('DEL', 'Indira Gandhi International Airport', 'New Delhi', 'India') ,
+  ('BOM', 'Chhatrapati Shivaji Maharaj International Airport', 'Mumbai', 'India') ,
+  ('BLR', 'Kempegowda International Airport', 'Bengaluru', 'India'),
+  ('MAA', 'Chennai International Airport', 'Chennai', 'India') ,
+  ('HYD', 'Rajiv Gandhi International Airport', 'Hyderabad', 'India') ;
+
+
+EMPLOYEE:
+
+INSERT INTO EMPLOYEE (EID, IATASTATIONCODE, FNAME, LNAME, SUPERID , AGE, SEX, PHONE, "Address", JOBTYPE, SALARY)
+VALUES 
+  (107, 'DEL', 'Sonia', 'Sharma', 141, 28, 'F', '+91 9876543210', '123 Main Rd, New Delhi', 'ADMINISTRATIVE SUPPORT', 45000),
+  (108, 'BOM', 'Rahul', 'Chopra', 107, 29, 'M', '+91 9988776655', '456 Park Ave, Mumbai', 'TRAFFIC MONITOR', 55000),
+  (109, 'BLR', 'Priya', 'Rao', 121, 26, 'F', '+91 9876543210', '789 MG Road, Bangalore', 'ENGINEER', 65000),
+  (110, 'MAA', 'Arun', 'Kumar', 148, 33, 'M', '+91 9876543210', '456 Anna Salai, Chennai', 'ENGINEER', 75000),
+  (111, 'HYD', 'Raj', 'Patel', NULL, 31, 'M', '+91 9876543210', '789 Banjara Hills, Hyderabad', 'TRAFFIC MONITOR', 60000),
+  (112, 'SFO', 'Jennifer', 'Garcia', 151, 27, 'F', '+1 1234567890', '123 Mission St, San Francisco, CA', 'AIRPORT AUTHORITY', 85000),
+  (113, 'LHR', 'David', 'Williams', 150, 35, 'M', '+44 2012345678', '456 Oxford St, London', 'ENGINEER', 90000),
+  (114, 'DXB', 'Fatima', 'Ali', 106, 24, 'F', '+97 1501234567', '789 Sheikh Zayed Rd, Dubai', 'ADMINISTRATIVE SUPPORT', 50000),
+  (115, 'AMD', 'Vikram', 'Singh', NULL, 30, 'M', '+91 9876543210', '123 Ashram Rd, Ahmedabad', 'TRAFFIC MONITOR', 55000),
+  (116, 'LAX', 'Emily', 'Lee', 145, 28, 'F', '+1 1234567890', '456 Wilshire Blvd, Los Angeles, CA', 'ENGINEER', 75000),
+  (117, 'CDG', 'Pierre', 'Girard', NULL, 33, 'M', '+33 123456789', '789 Champs-Élysées, Paris', 'AIRPORT AUTHORITY', 80000),
+(102, 'LAX', 'Jane', 'Smith', 145, 28, 'F', '+1 1234567890', '123 Main St, Los Angeles, CA', 'ENGINEER', 75000) ,
+(103, 'CDG', 'John', 'Doe', 117, 35, 'M', '+33 0123456789', '456 Rue de la Paix, Paris, France', 'ADMINISTRATIVE SUPPORT', 45000),
+(104, 'MAA', 'Sarah', 'Lee', 110, 24, 'F', '+91 9876543210', '789 Main Rd, Chennai, Tamil Nadu', 'TRAFFIC MONITOR', 30000) ,
+(105, 'BLR', 'Alex', 'Nguyen', 109, 31, 'M', '+1 2345678901', '123 Main St, Bangalore, India', 'ENGINEER', 85000),
+(106, 'DXB', 'Rachel', 'Garcia', 123, 27, 'F', '+97 1501234567', '789 Sheikh Zayed Rd, Dubai, UAE', 'ADMINISTRATIVE SUPPORT', 50000),
+(107, 'BOM', 'Mark', 'Lee', NULL, 26, 'M', '+91 9876543211', '456 Main Rd, Mumbai, India', 'TRAFFIC MONITOR', 35000),
+(108, 'LHR', 'Emma', 'Johnson', 122, 29, 'F', '+44 2012345678', '1 Heathrow Airport, London, UK', 'AIRPORT AUTHORITY', 60000),
+(110, 'DEL', 'Neha', 'Kapoor', 141, 29, 'F', '+91 9876543210', '123 Main St, New Delhi, India', 'ENGINEER', 80000),
+(111, 'BLR', 'Rahul', 'Gupta', NULL, 24, 'M', '+91 8765432109', '456 Main Rd, Bangalore, India', 'ADMINISTRATIVE SUPPORT', 45000),
+(112, 'MAA', 'Anjali', 'Sharma', NULL, 26, 'F', '+91 9876543211', '789 Main St, Chennai, India', 'TRAFFIC MONITOR', 35000),
+(113, 'HYD', 'Amit', 'Patel', NULL, 28, 'M', '+91 9876543212', '456 Park Rd, Hyderabad, India', 'AIRPORT AUTHORITY', 55000),
+  (118, 'BOM', 'Neha', 'Shah', 127, 29, 'F', '+91 9988776655', '123 Nariman Point, Mumbai', 'ADMINISTRATIVE SUPPORT', 45000),
+  (121, 'BLR', 'Aditi', 'Nair', 109, 27, 'F', '+91 9876543210', '456 Whitefield Rd, Bangalore', 'TRAFFIC MONITOR', 55000),
+  (122, 'LHR', 'John', 'Smith', 150, 33, 'M', '+44 2012345678', '789 Baker St, London', 'ENGINEER', 90000),
+  (123, 'DXB', 'Yousef', 'Khalid', 132, 28, 'M', '+97 1501234567', '123 Sheikh Mohammed Bin Zayed Rd, Dubai', 'ADMINISTRATIVE SUPPORT', 50000),
+  (124, 'AMD', 'Kavya', 'Sinha', 115, 31, 'F', '+91 9876543210', '456 Nehru Bridge, Ahmedabad', 'ENGINEER', 75000),
+  (125, 'LAX', 'Kevin', 'Wong', 102, 29, 'M', '+1 1234567890', '123 Hollywood Blvd, Los Angeles, CA', 'TRAFFIC MONITOR', 60000),
+  (126, 'CDG', 'Sophie', 'Lefebvre', 103, 35, 'F', '+33 123456789', '789 Rue Saint-Honoré, Paris', 'AIRPORT AUTHORITY', 80000),
+  (127, 'BOM', 'Anuj', 'Deshpande', 108, 29, 'M', '+91 9988776655', '123 Bandra-Kurla Complex, Mumbai', 'ENGINEER', 70000),
+  (128, 'MAA', 'Aishwarya', 'Raj', 148, 26, 'F', '+91 9876543210', '456 T Nagar, Chennai', 'ADMINISTRATIVE SUPPORT', 45000),
+  (129, 'HYD', 'Sanjay', 'Reddy', NULL, 30, 'M', '+91 9876543210', '789 Jubilee Hills, Hyderabad', 'TRAFFIC MONITOR', 55000),
+  (130, 'SFO', 'Andrew', 'Nguyen', 151, 28, 'M', '+1 1234567890', '456 Market St, San Francisco, CA', 'ENGINEER', 75000),
+  (131, 'BLR', 'Rohit', 'Sharma', 152, 33, 'M', '+91 9876543210', '456 Indiranagar, Bangalore', 'ENGINEER', 80000),
+  (132, 'DXB', 'Fatima', 'Ali', 144, 27, 'F', '+97 1501234567', '123 Al Maktoum Rd, Dubai', 'TRAFFIC MONITOR', 55000),
+  (133, 'LHR', 'Emily', 'Jones', 122, 29, 'F', '+44 2012345678', '789 Oxford St, London', 'ADMINISTRATIVE SUPPORT', 45000),
+  (134, 'AMD', 'Rahul', 'Shah', 115, 31, 'M', '+91 9876543210', '456 Ashram Rd, Ahmedabad', 'ENGINEER', 70000),
+  (135, 'LAX', 'Jennifer', 'Kim', 102, 28, 'F', '+1 1234567890', '123 Venice Beach, Los Angeles, CA', 'TRAFFIC MONITOR', 60000),
+  (136, 'CDG', 'Antoine', 'Dubois', 126, 34, 'M', '+33 123456789', '789 Avenue des Champs-Élysées, Paris', 'ENGINEER', 90000),
+  (137, 'BOM', 'Smita', 'Patel', 127, 30, 'F', '+91 9988776655', '123 Colaba, Mumbai', 'AIRPORT AUTHORITY', 80000),
+  (138, 'MAA', 'Vikram', 'Singh', 148, 27, 'M', '+91 9876543210', '456 Adyar, Chennai', 'ADMINISTRATIVE SUPPORT', 50000),
+  (139, 'HYD', 'Neha', 'Sharma', NULL, 29, 'F', '+91 9876543210', '789 Gachibowli, Hyderabad', 'ENGINEER', 75000),
+  (140, 'SFO', 'Michelle', 'Lee', 151, 26, 'F', '+1 1234567890', '456 Union Square, San Francisco, CA', 'TRAFFIC MONITOR', 55000),
+  (141, 'DEL', 'Amit', 'Verma', NULL, 32, 'M', '+91 9876543210', '123 Connaught Place, Delhi', 'ENGINEER', 85000),
+  (142, 'BLR', 'Priya', 'Nair', NULL, 28, 'F', '+91 9876543210', '456 Whitefield, Bangalore', 'ADMINISTRATIVE SUPPORT', 50000),
+  (143, 'SFO', 'David', 'Garcia', 151, 30, 'M', '+1 1234567890', '123 Fishermans Wharf, San Francisco, CA', 'AIRPORT AUTHORITY', 90000),
+  (144, 'DXB', 'Hamza', 'Ali', NULL, 26, 'M', '+97 1501234567', '456 Jumeirah Beach, Dubai', 'TRAFFIC MONITOR', 60000),
+  (145, 'LAX', 'Sarah', 'Wu', NULL, 29, 'F', '+1 1234567890', '123 Santa Monica Pier, Los Angeles, CA', 'ENGINEER', 70000),
+  (146, 'CDG', 'Jean', 'Dupont', 136, 35, 'M', '+3 3123456789', '789 Rue Saint-Honoré, Paris', 'ADMINISTRATIVE SUPPORT', 45000),
+  (147, 'BOM', 'Vijay', 'Shah', 137, 31, 'M', '+91 9876543210', '123 Juhu Beach, Mumbai', 'ENGINEER', 80000),
+  (148, 'MAA', 'Anjali', 'Rao', NULL, 27, 'F', '+91 9876543210', '456 Velachery, Chennai', 'TRAFFIC MONITOR', 55000),
+  (149, 'HYD', 'Rajesh', 'Kumar', NULL, 28, 'M', '+91 9876543210', '789 Jubilee Hills, Hyderabad', 'ENGINEER', 75000),
+  (150, 'LHR', 'James', 'Smith', NULL, 26, 'M', '+44 2012345678', '123 Buckingham Palace Rd, London', 'AIRPORT AUTHORITY', 80000),
+  (151, 'SFO', 'Linda', 'Nguyen', NULL, 27, 'F', '+1 1234567890', '456 Lombard St, San Francisco, CA', 'ENGINEER', 80000),
+  (152, 'BLR', 'Raj', 'Kumar', 142, 31, 'M', '+91 9876543210', '123 Koramangala, Bangalore', 'ADMINISTRATIVE SUPPORT', 50000),
+  (153, 'LAX', 'Elena', 'Gomez', 135, 28, 'F', '+1 1234567890', '123 Hollywood Blvd, Los Angeles, CA', 'TRAFFIC MONITOR', 60000);
+
+
+TERMINAL:
+
+INSERT INTO Terminal (IATASTATIONCODE, TerminalNumber)
+VALUES
+  ('AMD', 'T1'),
+  ('AMD', 'T2'),
+  ('AMD', 'T3'),
+  ('LAX', 'T1'),
+  ('LAX', 'T2'),
+  ('LAX', 'T3'),
+  ('DXB', 'T1'),
+  ('DXB', 'T2'),
+  ('DXB', 'T3'),
+  ('SFO', 'T1'),
+  ('SFO', 'T2'),
+  ('SFO', 'T3'),
+  ('LHR', 'T1'), 
+  ('LHR', 'T2'),
+  ('LHR', 'T3'),
+  ('CDG', 'T1'),
+  ('CDG', 'T2'),
+  ('CDG', 'T3'),
+  ('DEL', 'T1'),
+  ('DEL', 'T2'),
+  ('DEL', 'T3'),
+  ('BOM', 'T1'),
+  ('BOM', 'T2'),
+  ('BOM', 'T3'),
+  ('BLR', 'T1'),
+  ('BLR', 'T2'),
+  ('BLR', 'T3'),
+  ('MAA', 'T1'),
+  ('MAA', 'T2'),
+  ('MAA', 'T3');
+
+
+RUNWAY:
+
+SET SEARCH_PATH TO AVIATION_SYSTEM;
+INSERT INTO RUNWAY(RUNWAYID, WIDTH, LENGTH, SURFACETYPE, MAINTENANCESCHEDULE, IATASTATIONCODE)
+VALUES
+('L01', 75, 4000, 'asphalt', '2023-09-05 10:00:00-05:00', 'LAX'),
+('L02', 90, 5500, 'concrete', '2023-10-15 12:30:00+03:00', 'LAX'),
+('L03', 85, 5000, 'asphalt', '2023-11-20 09:00:00-06:00','LAX'), 
+('L04', 80, 4500, 'concrete', '2023-12-25 14:00:00-08:00','LAX'),
+('D01', 75, 4000, 'asphalt', '2023-09-05 10:00:00+04:00', 'DXB'),
+('D02', 90, 5500, 'concrete', '2023-10-15 12:30:00+04:00', 'DXB'),
+('D03', 85, 5000, 'asphalt', '2023-11-20 09:00:00+04:00', 'DXB'),
+('D04', 80, 4500, 'concrete', '2023-12-25 14:00:00+04:00', 'DXB'),
+('S01', 75, 4000, 'asphalt', '2023-09-05 10:00:00-07:00', 'SFO'),
+('S02', 90, 5500, 'concrete', '2023-10-15 12:30:00-07:00', 'SFO'),
+('S03', 85, 5000, 'asphalt', '2023-11-20 09:00:00-08:00', 'SFO'),
+('S04', 80, 4500, 'concrete', '2023-12-25 14:00:00-08:00', 'SFO'),
+('R01', 75, 4000, 'asphalt', '2023-09-05 10:00:00+01:00', 'LHR'),
+('R02', 90, 5500, 'concrete', '2023-10-15 12:30:00+01:00', 'LHR'),
+('R03', 85, 5000, 'asphalt', '2023-11-20 09:00:00+00:00', 'LHR'),
+('R04', 80, 4500, 'concrete', '2023-12-25 14:00:00+00:00', 'LHR'),
+('C01', 75, 4000, 'asphalt', '2023-09-05 10:00:00+02:00', 'CDG'),
+('C02', 90, 5500, 'concrete', '2023-10-15 12:30:00+02:00', 'CDG'),
+('C03', 85, 5000, 'asphalt', '2023-11-20 09:00:00+01:00', 'CDG'),
+('C04', 80, 4500, 'concrete', '2023-12-25 14:00:00+01:00', 'CDG'),
+('E01', 60, 3000, 'concrete', '2023-10-01 11:00:00+05:30', 'DEL'),
+('E02', 75, 3500, 'asphalt', '2023-11-15 14:30:00+05:30', 'DEL'),
+('E03', 100, 4500, 'concrete', '2023-09-20 09:45:00+05:30', 'DEL'),
+('E04', 85, 4000, 'asphalt', '2023-12-05 12:15:00+05:30', 'DEL'),
+('B01', 70, 3500, 'asphalt', '2023-09-25 10:30:00+05:30', 'BOM'),
+('B02', 90, 4000, 'concrete', '2023-11-10 14:00:00+05:30', 'BOM'),
+('B03', 65, 3000, 'asphalt', '2023-10-15 11:45:00+05:30', 'BOM'),
+('B04', 80, 3750, 'concrete', '2023-12-01 13:30:00+05:30', 'BOM'),
+('K01', 90, 4000, 'concrete', '2023-09-20 09:30:00+05:30', 'BLR'),
+('K02', 75, 3500, 'asphalt', '2023-10-25 12:00:00+05:30', 'BLR'),
+('K03', 100, 4500, 'concrete', '2023-11-15 14:30:00+05:30', 'BLR'),
+('K04', 85, 4000, 'asphalt', '2023-12-10 15:00:00+05:30', 'BLR'),
+('M01', 80, 3750, 'asphalt', '2023-09-30 10:00:00+05:30', 'MAA'),
+('M02', 65, 3000, 'asphalt', '2023-11-05 12:30:00+05:30', 'MAA'),
+('M03', 90, 4000, 'concrete', '2023-10-10 11:00:00+05:30', 'MAA'),
+('H01', 90, 4500, 'concrete', '2023-10-01 12:30:00-07:00', 'HYD'),
+('H02', 75, 4200, 'asphalt', '2023-11-15 09:15:00-07:00', 'HYD'),
+('H03', 100, 5000, 'concrete', '2024-01-02 15:45:00-07:00', 'HYD'),
+('H04', 80, 3800, 'asphalt', '2024-03-20 10:00:00-07:00', 'HYD'),
+('A01', 85, 4200, 'asphalt', '2023-09-25 08:00:00-07:00', 'AMD'),
+('A02', 90, 4500, 'concrete', '2023-11-12 13:15:00-07:00', 'AMD'),
+('A03', 75, 3800, 'asphalt', '2024-02-05 11:30:00-07:00', 'AMD'),
+('A04', 100, 5000, 'concrete', '2024-04-15 14:00:00-07:00', 'AMD');
+
+
+AIRLINE:
+
+INSERT INTO AIRLINE (IATADesignator, "Name", ThreeDigitCode) VALUES
+('AI', 'Air India', '104'),
+('6E', 'IndiGo', '188'),
+('UK', 'Vistara', '020'),
+('SG', 'SpiceJet', '468'),
+('G8', 'GoAir', '368'),
+('BA', 'British Airways', '125'),
+('DL', 'Delta Air Lines', '006'),
+('SQ', 'Singapore Airlines', '618'),
+('AF', 'Air France', '057'),
+('EK', 'Emirates', '176');
+
+
+AIRCRAFT:
+
+INSERT INTO AIRCRAFT (AircraftID, Capacity, Manufacturer, AircraftType, IATADesignator) VALUES
+('VT-IAA', 186, 'Airbus', 'A320', 'AI'),
+('VT-IAF', 180, 'Boeing', '737-800', 'AI'),
+('VT-INY', 186, 'Airbus', 'A320', '6E'),
+('VT-ATV', 156, 'Airbus', 'A320', '6E'),
+('VT-TNB', 158, 'Airbus', 'A320', '6E'),
+('VT-TND', 180, 'Airbus', 'A320', 'UK'),
+('VT-SZB', 189, 'Boeing', '737-800', 'SG'),
+('VT-GOJ', 186, 'Airbus', 'A320', 'G8'),
+('VT-GOP', 180, 'Airbus', 'A320', 'G8'),
+('VT-IJE', 122, 'ATR', '72-600', 'SG'),
+('VT-IVJ', 122, 'ATR', '72-600', 'SG'),
+('F-WWOW', 853, 'Airbus', 'A380', 'BA'),
+('F-WWBJ', 524, 'Airbus', 'A350-900', 'BA'),
+('N101DU', 268, 'Boeing', '787-9', 'DL'),
+('N102DA', 234, 'Boeing', '757-200', 'DL'),
+('9V-SWP', 471, 'Airbus', 'A380', 'SQ'),
+('9V-SYE', 253, 'Boeing', '777-200ER', 'SQ'),
+('F-GZNL', 312, 'Airbus', 'A330-200', 'AF'),
+('F-GSQI', 312, 'Airbus', 'A330-200', 'AF'),
+('A6-EGF', 517, 'Airbus', 'A380', 'EK'),
+('A6-EYN', 264, 'Boeing', '777-300ER', 'EK'),
+('N194DN', 306, 'Airbus', 'A330-300', 'DL'),
+('N856NW', 291, 'Airbus', 'A330-200', 'DL'),
+('A6-EDG', 302, 'Airbus', 'A330-200', 'EK'),
+('A6-EYH', 264, 'Boeing', '777-300ER', 'EK');
+
+
+STAFF:
+
+INSERT INTO STAFF (STAFFID, IATADESIGNATOR, FNAME, LNAME, SUPERID, AGE, SEX, PHONE,"Address", JOBTYPE, SALARY, FLIGHTCODE) VALUES
+(101, 'AI', 'SUYASH', 'BHAGAT', 121, 23, 'M', '+919458087348', 'ANANPURI, KANPUR,UP', 'CO-PILOT', '50000', 'AI101'),
+(102, 'EK', 'JASMINE', 'KUMARI', 127, 24, 'F', '+919885934556', 'B-21, PATEL NAGAR, NEW DELHI', 'AIR-HOSTESS', '35000', 'EK202'),
+(103, 'BA', 'RAJESH', 'MEHTA', NULL, 29, 'M', '+919812345678', 'B-15, JANAKPURI, NEW DELHI', 'PILOT', '60000', 'BA102'),
+(105, 'AI', 'RAJIV', 'SHARMA', 109, 31, 'M', '+919810203040', 'F-201, MAYUR VIHAR, DELHI', 'PILOT', '65000', 'AI201'),
+(106, 'EK', 'SUNITA', 'SINGH', 134, 28, 'F', '+919654321098', 'G-10, VASUNDHARA, GHAZIABAD', 'AIR-HOSTESS', '34000', 'EK609'),
+(107, 'BA', 'AJAY', 'VERMA', NULL, 35, 'M', '+919717171717', 'D-1/101, JANAKPURI, NEW DELHI', 'PILOT', '58000', 'BA101'),
+(108, 'AF', 'AMIT', 'GARG', 118, 30, 'M', '+919811223344', 'A-202, DWARKA, NEW DELHI', 'CO-PILOT', '42000', 'AF102'),
+(109, 'AI', 'SHALINI', 'SHARMA', NULL, 26, 'F', '+919540302010', 'F-301, PASCHIM VIHAR, NEW DELHI', 'PILOT', '55000', 'AI301'),
+(110, 'BA', 'JAYA', 'MEHTA', 107, 25, 'F', '+919999988888', 'A-1/401, JANAKPURI, NEW DELHI', 'BAGGAGE HANDLER', '25000', 'BA101'),
+(111, 'EK', 'Alicia', 'Lee', 134, 26, 'F', '+1-456-789-0123', '789 Oak St, Anytown, USA', 'CO-PILOT', 45000, 'EK609'),
+(112, 'AI', 'Matthew', 'Chen', NULL, 31, 'M', '+1-567-890-1234', '111 Pine St, Anytown, USA', 'PILOT', 60000, 'AI102'),
+(114, 'BA', 'Ethan', 'Kim', 107, 30, 'M', '+1-789-012-3456', '333 Oak St, Anytown, USA', 'CO-PILOT', 55000, 'BA101'),
+(115, 'EK', 'Olivia', 'Nguyen', 137, 28, 'F', '+1-890-123-4567', '444 Elm St, Anytown, USA', 'CO-PILOT', 42000, 'EK302'),
+(116, 'AI', 'Lucas', 'Gonzalez', 101, 29, 'M', '+1-901-234-5678', '555 Maple St, Anytown, USA', 'CO-PILOT', 65000, 'AI201'),
+(117, 'BA', 'Sophia', 'Parker', 103, 25, 'F', '+1-012-345-6789', '666 Pine St, Anytown, USA', 'BAGGAGE HANDLER', 25000, 'BA102'),
+(118, 'AF', 'Jackson', 'Patel', NULL, 23, 'M', '+1-234-567-8901', '777 Oak St, Anytown, USA', 'PILOT', 55000, 'AF102'),
+(119, 'EK', 'Emma', 'Shah', 127, 28, 'F', '+1-345-678-9012', '888 Elm St, Anytown, USA', 'CO-PILOT', 45000, 'EK201'),
+(120, 'BA', 'Daniel', 'Wu', 103, 24, 'M', '+1-456-789-0123', '999 Maple St, Anytown, USA', 'AIR-HOSTESS', 35000, 'BA102'),
+(121, 'AI', 'John', 'Doe', NULL, 28, 'M', '1234567890', '123 Main St, Anytown, USA', 'PILOT', 50000, 'AI101'),
+(122, 'BA', 'Jane', 'Smith', 107, 24, 'F', '2345678901', '456 Elm St, Anytown, USA', 'AIR-HOSTESS', 35000, 'BA101'),
+(123, 'AF', 'Robert', 'Johnson', 118, 32, 'M', '3456789012', '789 Oak St, Anytown, USA', 'CO-PILOT', 45000, 'AF102'),
+(124, 'EK', 'Lisa', 'Garcia', 127, 27, 'F', '4567890123', '101 Maple St, Anytown, USA', 'NAVIGATOR', 40000, 'EK201'),
+(125, 'AI', 'William', 'Brown', 112, 29, 'M', '5678901234', '111 Pine St, Anytown, USA', 'CO-PILOT', 60000, 'AI102'),
+(126, 'BA', 'Emily', 'Davis', 103, 23, 'F', '6789012345', '222 Cedar St, Anytown, USA', 'AIR-HOSTESS', 32000, 'BA102'),
+(127, 'EK', 'Michael', 'Wilson', NULL, 30, 'M', '7890123456', '333 Oak St, Anytown, USA', 'PILOT', 55000, 'EK202'),
+(129, 'AI', 'David', 'Martinez', 101, 33, 'M', '9012345678', '555 Maple St, Anytown, USA', 'NAVIGATOR', 65000, 'AI201'),
+(130, 'BA', 'Sarah', 'Taylor', 107, 25, 'F', '0123456789', '666 Pine St, Anytown, USA', 'BAGGAGE HANDLER', 25000, 'BA101'),
+(131, 'AI', 'Emily', 'Garcia', 101, 27, 'F', '+1-234-567-8901', '1234 Main St, Anytown, USA', 'AIR-HOSTESS', 55000, 'AI101'),
+(132, 'BA', 'Joshua', 'Lee', 103, 30, 'M', '+1-345-678-9012', '2345 Elm St, Anytown, USA', 'CO-PILOT', 45000, 'BA102'),
+(134, 'EK', 'Alexander', 'Singh', NULL, 29, 'M', '+1-567-890-1234', '4567 Oak St, Anytown, USA', 'PILOT', 60000, 'EK609'),
+(135, 'AI', 'Mia', 'Patel', 101, 26, 'F', '+1-678-901-2345', '5678 Elm St, Anytown, USA', 'AIR-HOSTESS', 45000, 'AI102'),
+(136, 'BA', 'Ethan', 'Tran', 107, 31, 'M', '+1-789-012-3456', '6789 Oak St, Anytown, USA', 'CO-PILOT', 55000, 'BA101'),
+(137, 'EK', 'Ava', 'Liu', NULL, 28, 'F', '+1-890-123-4567', '7890 Pine St, Anytown, USA', 'PILOT', 42000, 'EK302'),
+(138, 'AF', 'Lucas', 'Gupta', 118, 23, 'M', '+1-901-234-5678', '8901 Elm St, Anytown, USA', 'NAVIGATOR', 55000, 'AF102'),
+(139, 'BA', 'Chloe', 'Wong', 107, 27, 'F', '+1-012-345-6789', '9012 Oak St, Anytown, USA', 'AIR-HOSTESS', 35000, 'BA101'),
+(140, 'EK', 'William', 'Ali', 134, 28, 'M', '+1-123-456-7890', '0123 Elm St, Anytown, USA', 'CO-PILOT', 45000, 'EK609');
+
+
+FLIGHT:
+
+INSERT INTO FLIGHT (FlightCode, FlightType, "Source", SRC_Terminal, Destination, DST_Terminal, Departure, Arrival, Duration, "Status", IATADesignator , AircraftID) VALUES
+('AI101', 'Domestic', 'DEL', 'T3', 'BOM', 'T2', '2023-04-20 06:00:00', '2023-04-20 07:30:00', '01:30:00', 'Scheduled', 'AI' , 'VT-IAA'),
+('AI102', 'Domestic', 'BOM', 'T2', 'DEL', 'T3', '2023-04-20 08:00:00', '2023-04-20 09:30:00', '01:30:00', 'Scheduled', 'AI', 'VT-IAA'),
+('AI201', 'Domestic', 'DEL', 'T3', 'BLR', 'T1', '2023-04-20 10:00:00', '2023-04-20 13:00:00', '03:00:00', 'Scheduled', 'AI', 'VT-IAF'),
+('AI202', 'Domestic', 'BLR', 'T1', 'DEL', 'T3', '2023-04-20 14:00:00', '2023-04-20 17:00:00', '03:00:00', 'Scheduled', 'AI','VT-IAF'),
+('AI301', 'International', 'DEL', 'T3', 'LHR', 'T2', '2023-04-20 19:00:00', '2023-04-20 21:00:00', '02:00:00', 'Scheduled', 'AI','VT-IAA'),
+('AI302', 'International', 'LHR', 'T2', 'DEL', 'T3', '2023-04-20 03:00:00', '2023-04-20 13:00:00', '10:00:00', 'Scheduled', 'AI','VT-IAF'),
+('BA101', 'Domestic', 'LHR', 'T3', 'SFO', 'T2', '2023-04-20 06:00:00', '2023-04-20 09:00:00', '11:00:00', 'Scheduled', 'BA','F-WWOW'),
+('BA102', 'Domestic', 'SFO', 'T2', 'LHR', 'T3', '2023-04-20 10:00:00', '2023-04-20 18:00:00', '08:00:00', 'Scheduled', 'BA','F-WWBJ'),
+('BA201', 'International', 'LHR', 'T3', 'CDG', 'T1', '2023-04-20 15:00:00', '2023-04-20 17:00:00', '02:00:00', 'Scheduled', 'BA','F-WWOW'),
+('BA202', 'International', 'CDG', 'T1', 'LHR', 'T3', '2023-04-20 22:00:00', '2023-04-21 00:00:00', '02:00:00', 'Scheduled', 'BA','F-WWBJ'),
+('EK201', 'International', 'DXB', 'T1', 'LAX', 'T3', '2023-04-20 12:00:00', '2023-04-20 19:00:00', '17:00:00', 'Scheduled', 'EK' , 'A6-EGF'),
+('EK202', 'International', 'LAX', 'T3', 'DXB', 'T1', '2023-04-20 21:00:00', '2023-04-21 22:00:00', '17:00:00', 'Scheduled', 'EK','A6-EYN'),
+('AF101', 'International', 'CDG', 'T2', 'DEL', 'T3', '2023-04-20 19:30:00', '2023-04-20 22:00:00', '02:30:00', 'Scheduled', 'AF','F-GZNL'),
+('AF102', 'International', 'DEL', 'T3', 'CDG', 'T2', '2023-04-21 01:00:00', '2023-04-21 10:00:00', '11:00:00', 'Scheduled', 'AF','F-GSQI'),
+('AI401', 'Domestic', 'DEL', 'T3', 'MAA', 'T1', '2023-04-21 06:00:00', '2023-04-21 09:00:00', '03:00:00', 'Scheduled', 'AI','VT-IAA'),
+('AI402', 'Domestic', 'MAA', 'T1', 'DEL', 'T3', '2023-04-21 10:00:00', '2023-04-21 13:00:00', '03:00:00', 'Scheduled', 'AI','VT-IAF'),
+('AI501', 'Domestic', 'DEL', 'T3', 'BLR', 'T2', '2023-04-21 09:00:00', '2023-04-21 12:00:00', '03:00:00', 'Scheduled', 'AI','VT-IAA'),
+('AI502', 'Domestic', 'BLR', 'T2', 'DEL', 'T3', '2023-04-21 13:00:00', '2023-04-21 16:00:00', '03:00:00', 'Scheduled', 'AI','VT-IAF'),
+('EK301', 'International', 'DXB', 'T1', 'SFO', 'T2', '2023-04-22 11:00:00', '2023-04-22 19:00:00', '16:00:00', 'Scheduled', 'EK','A6-EDG'),
+('EK609', 'International', 'LHR', 'T2', 'DXB', 'T1', '2023-04-21 20:00:00', '2023-04-21 06:00:00', '16:00:00', 'Scheduled', 'EK','A6-EYH'),
+('EK302', 'International', 'SFO', 'T2', 'DXB', 'T1', '2023-04-21 20:00:00', '2023-04-22 06:00:00', '16:00:00', 'Scheduled', 'EK','A6-EYH');
+
+
+TICKETS:
+
+INSERT INTO TICKETS VALUES( 101, 'A01', 'Economy', 'AI201', 'JNY001');
+INSERT INTO TICKETS VALUES( 102, 'B02', 'Business', 'AI102', 'JNY002');
+INSERT INTO TICKETS VALUES( 103, 'C03', 'Economy', 'AI201', 'JNY003');
+INSERT INTO TICKETS VALUES( 104, 'D04', 'Economy', 'AI202', 'JNY004');
+INSERT INTO TICKETS VALUES( 105, 'E05', 'Business', 'AI301', 'JNY005');
+INSERT INTO TICKETS VALUES( 106, 'F06', 'Economy', 'BA201', 'JNY006');
+INSERT INTO TICKETS VALUES( 107, 'F06', 'Economy', 'AF101', 'JNY006');
+INSERT INTO TICKETS VALUES( 108, 'H08', 'Business', 'BA102', 'JNY008');
+INSERT INTO TICKETS VALUES( 109, 'I09', 'Economy', 'AI302', 'JNY009');
+INSERT INTO TICKETS VALUES( 110, 'J10', 'Economy', 'BA202', 'JNY010');
+INSERT INTO TICKETS VALUES( 111, 'K11', 'Business', 'EK201', 'JNY011');
+INSERT INTO TICKETS VALUES( 112, 'L12', 'Economy', 'EK202', 'JNY012');
+INSERT INTO TICKETS VALUES( 113, 'M13', 'Economy', 'AF102', 'JNY013');
+INSERT INTO TICKETS VALUES( 114, 'N14', 'Business', 'AF101', 'JNY014');
+INSERT INTO TICKETS VALUES( 115, 'O15', 'Economy', 'AI401', 'JNY015');
+INSERT INTO TICKETS VALUES( 116, 'P16', 'Economy', 'AI402', 'JNY016');
+INSERT INTO TICKETS VALUES( 117, 'Q17', 'Business', 'AI501', 'JNY017');
+INSERT INTO TICKETS VALUES( 118, 'R18', 'Economy', 'AI502', 'JNY018');
+INSERT INTO TICKETS VALUES( 119, 'S19', 'Economy', 'EK301', 'JNY019');
+INSERT INTO TICKETS VALUES( 120, 'T20', 'Business', 'EK302', 'JNY020')
+INSERT INTO TICKETS VALUES( 127, 'A07', 'Economy', 'BA101', 'JNY007');
+INSERT INTO TICKETS VALUES( 128, 'A07', 'Economy', 'AF102', 'JNY009');
+
+
+JOURNEY:
+
+INSERT INTO JOURNEY(JourneyID, Source, Destination, NetCost)
+VALUES ('JNY001', 'DEL', 'BOM', 1500),
+       ('JNY002', 'BOM', 'DEL', 1500),
+       ('JNY003', 'DEL', 'BLR', 2000),
+       ('JNY004', 'BLR', 'DEL', 2000),
+       ('JNY005', 'DEL', 'LHR', 3500),
+       ('JNY006', 'LHR', 'DEL', 3500),
+       ('JNY007', 'LHR', 'SFO', 5000),
+       ('JNY008', 'SFO', 'LHR', 5000),
+       ('JNY009', 'LHR', 'CDG', 2500),
+       ('JNY010', 'CDG', 'LHR', 2500),
+       ('JNY011', 'DXB', 'LAX', 7000),
+       ('JNY012', 'LAX', 'DXB', 7000),
+       ('JNY013', 'DEL', 'CDG', 4000),
+       ('JNY014', 'CDG', 'DEL', 4000),
+       ('JNY015', 'DEL', 'MAA', 2000),
+       ('JNY016', 'MAA', 'DEL', 2000),
+       ('JNY017', 'DEL', 'BLR', 2500),
+       ('JNY018', 'BLR', 'DEL', 2500),
+       ('JNY019', 'DXB', 'SFO', 6000),
+       ('JNY020', 'SFO', 'DXB', 6000);
+
+
+Luggage:
+
+INSERT INTO LUGGAGE (LuggageID, "Type", "Weight", JourneyID)
+VALUES ('L01', 'Suitcase', 20, 'JNY001'),
+       ('L02', 'Suitcase', 15, 'JNY001'),
+       ('L03', 'Checked bag', 30, 'JNY002'),
+       ('L04', 'Checked bag', 25, 'JNY003'),
+       ('L05', 'Suitcase', 18, 'JNY004'),
+       ('L06', 'Suitcase', 22, 'JNY004'),
+       ('L07', 'Checked bag', 27, 'JNY005'),
+       ('L08', 'Suitcase', 23, 'JNY005'),
+       ('L09', 'Suitcase', 16, 'JNY006'),
+       ('L10', 'Checked bag', 28, 'JNY007'),
+       ('L11', 'Suitcase', 21, 'JNY008'),
+       ('L12', 'Suitcase', 19, 'JNY009'),
+       ('L13', 'Checked bag', 26, 'JNY010'),
+       ('L14', 'Suitcase', 17, 'JNY011'),
+       ('L15', 'Suitcase', 24, 'JNY012'),
+       ('L16', 'Checked bag', 29, 'JNY013'),
+       ('L17', 'Suitcase', 20, 'JNY014'),
+       ('L18', 'Suitcase', 22, 'JNY015'),
+       ('L19', 'Checked bag', 25, 'JNY016'),
+       ('L20', 'Suitcase', 18, 'JNY017'),
+       ('L21', 'Suitcase', 16, 'JNY018'),
+       ('L22', 'Checked bag', 28, 'JNY019'),
+       ('L23', 'Suitcase', 21, 'JNY020'),
+       ('L24', 'Suitcase', 19, 'JNY020'),
+       ('L25', 'Checked bag', 26, 'JNY015'),
+       ('L26', 'Suitcase', 17, 'JNY013'),
+       ('L27', 'Suitcase', 24, 'JNY019'),
+       ('L28', 'Checked bag', 29, 'JNY011'),
+       ('L29', 'Suitcase', 20, 'JNY013'),
+       ('L30', 'Suitcase', 22, 'JNY016');
+	   	   
+
+Layover:
+
+INSERT INTO LAYOVER(JourneyID, Layover_IATA, Duration)
+VALUES ('JNY009', 'DEL', 120),
+       ('JNY006', 'CDG', 150);	
+	 
+
+Traveller:
+
+INSERT INTO TRAVELLER (ValidID, FName, LName, Age, Sex, "Address")
+VALUES
+('TV00123', 'John', 'Smith', 35, 'M', '123 Main St, San Francisco, CA, USA'),
+('TV00234', 'Jane', 'Doe', 25, 'F', '456 First St, Los Angeles, CA, USA'),
+('TV00345', 'David', 'Lee', 40, 'M', '789 Second Ave, New York, NY, USA'),
+('TV00456', 'Maria', 'Garcia', 30, 'F', '10 Downing St, London, UK'),
+('TV00567', 'Juan', 'Perez', 28, 'M', '45 Rue du Faubourg Saint-Honoré, Paris, France'),
+('TV00678', 'Yuka', 'Sato', 22, 'F', '1 Chome-4-1 Kasumigaseki, Chiyoda-ku, Tokyo, Japan'),
+('TV00789', 'Liu', 'Chen', 33, 'M', '1033 Changning Rd, Shanghai, China'),
+('TV00890', 'Priya', 'Kapoor', 27, 'F', '101 MG Road, Bangalore, India'),
+('TV00901', 'Rahul', 'Singh', 36, 'M', 'B-222 Sector 22, Noida, India'),
+('TV01012', 'Amit', 'Patel', 31, 'M', 'C-124 Sarkhej Road, Ahmedabad, India'),
+('TV01123', 'Nadia', 'Ali', 29, 'F', '11-22 Jalan Ampang, Kuala Lumpur, Malaysia'),
+('TV01234', 'Mario', 'Rossi', 45, 'M', 'Via del Corso, 00187 Roma RM, Italy'),
+('TV01345', 'Ana', 'González', 23, 'F', 'Paseo de la Castellana, 28046 Madrid, Spain'),
+('TV01456', 'Miguel', 'Martínez', 38, 'M', 'Avenida de Mayo, 1084 Buenos Aires, Argentina'),
+('TV01567', 'Samantha', 'Kim', 26, 'F', 'Gangnam-gu, Seoul, South Korea'),
+('TV01678', 'Ahmed', 'Sayed', 34, 'M', '6th of October City, Egypt'),
+('TV01789', 'Julia', 'Andersson', 32, 'F', 'Kungsgatan 28, 111 35 Stockholm, Sweden'),
+('TV01890', 'Daniel', 'Nguyen', 24, 'M', 'District 1, Ho Chi Minh City, Vietnam'),
+('TV01901', 'Nina', 'Ivanova', 37, 'F', 'Nevsky Ave, 191186 Saint Petersburg, Russia'),
+('TV02012', 'Sofia', 'Fernández', 21, 'F', 'Madero, Centro, 06000 Mexico City, Mexico');
+
+
+Email:
+
+INSERT INTO EMAIL(ValidID, Email)
+VALUES ('TV00123', 'tv00123@example.com'),
+	  ('TV00123', 'tv11123@example.com'),
+       ('TV00234', 'tv00234@example.com'),
+       ('TV00345', 'tv00345@example.com'),
+       ('TV00456', 'tv00456@example.com'),
+	  ('TV00456', 'tv11456@example.com'),
+       ('TV00567', 'tv00567@example.com'),
+       ('TV00678', 'tv00678@example.com'),
+       ('TV00789', 'tv00789@example.com'),
+       ('TV00890', 'tv00890@example.com'),
+       ('TV00901', 'tv00901@example.com'),
+       ('TV01012', 'tv01012@example.com'),
+	  ('TV01012', 'tv11012@example.com'),
+       ('TV01123', 'tv01123@example.com'),
+       ('TV01234', 'tv01234@example.com'),
+       ('TV01345', 'tv01345@example.com'),
+       ('TV01456', 'tv01456@example.com'),
+       ('TV01567', 'tv01567@example.com'),
+	  ('TV01567', 'tv11567@example.com'),
+       ('TV01678', 'tv01678@example.com'),
+       ('TV01789', 'tv01789@example.com'),
+       ('TV01890', 'tv01890@example.com'),
+	  ('TV01901', 'tv01901@example.com'),
+       ('TV02012', 'tv02012@example.com');
+
+
+Books:
+
+INSERT INTO BOOKS(ValidID, JourneyID, Booking_Date)
+VALUES ('TV00123', 'JNY001', '2023-05-15'),
+       ('TV00123', 'JNY006', '2023-06-20'),
+       ('TV00234', 'JNY003', '2023-05-27'),
+       ('TV00345', 'JNY010', '2023-07-01'),
+       ('TV00456', 'JNY012', '2023-07-10'),
+       ('TV00567', 'JNY015', '2023-08-05'),
+       ('TV00678', 'JNY002', '2023-05-20'),
+       ('TV00789', 'JNY008', '2023-06-26'),
+       ('TV00890', 'JNY016', '2023-08-10'),
+       ('TV00901', 'JNY019', '2023-08-31'),
+       ('TV01012', 'JNY004', '2023-06-02'),
+       ('TV01123', 'JNY013', '2023-07-13'),
+       ('TV01234', 'JNY020', '2023-09-02'),
+       ('TV01345', 'JNY005', '2023-06-10'),
+       ('TV01456', 'JNY009', '2023-07-03'),
+       ('TV01567', 'JNY014', '2023-07-25'),
+       ('TV01678', 'JNY017', '2023-08-12'),
+       ('TV01789', 'JNY018', '2023-08-24'),
+       ('TV01890', 'JNY011', '2023-06-30'),
+       ('TV01901', 'JNY007', '2023-06-17');
+
+
+Cancels:
+
+INSERT INTO CANCELS (ValidID, JourneyID, Cancellation_Date, Charge)
+VALUES ('TV00123', 'JNY001', '2023-05-01', '50'),
+       ('TV00234', 'JNY004', '2023-05-03', '30'),
+       ('TV00345', 'JNY007', '2023-05-05', '20'),
+       ('TV00456', 'JNY008', '2023-05-05', '40'),
+       ('TV00567', 'JNY012', '2023-05-10', '50'),
+       ('TV00678', 'JNY014', '2023-05-12', '10'),
+       ('TV00789', 'JNY017', '2023-05-15', '30'),
+       ('TV00890', 'JNY019', '2023-05-18', '25'),
+       ('TV01012', 'JNY020', '2023-05-20', '60'),
+       ('TV01901', 'JNY002', '2023-04-25', '50');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
